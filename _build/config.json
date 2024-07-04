@@ -1,0 +1,50 @@
+{
+	"name": "friendlyCaptcha",
+	"lowCaseName": "friendlycaptcha",
+	"description": "Formit Captcha",
+	"author": "Jan Dähne",
+	"version": "1.0.0-pl",
+	"package": {
+		"elements": {
+			"chunks": [{
+                "name": "friendlyCaptcha",
+                "file": "friendlycaptcha.chunk.tpl"
+            }],
+			"snippets": [{
+                "name": "friendlyCaptcha",
+                "file": "friendlycaptcha.snippet.php"
+            },
+			{
+				"name": "friendlyCaptchaRenderer",
+				"file": "friendlycaptcharenderer.snippet.php"
+			}]
+		},
+	    "systemSettings": [
+			{
+				"key": "sitekey",
+				"area": "connection",
+				"value": ""
+			},
+			{
+				"key": "secret",
+				"area": "connection",
+				"value": ""
+			}
+		],
+		"actions": [],
+		"menus": []
+	},
+	"dependencies": [{
+		"name": "php",
+		"version": ">=5.6"
+	},
+	{
+		"name": "modx",
+		"version": ">=2.6"
+	}],
+	"build": {
+		"readme": "docs/readme.md",
+		"license": "docs/license.md",
+		"changelog": "docs/changelog.md"
+	}
+}
